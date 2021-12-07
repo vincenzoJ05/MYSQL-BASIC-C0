@@ -36,7 +36,16 @@ SELECT * FROM `players` WHERE nationality = 'netherlands' OR club = 'Ajax' AND c
 SELECT * FROM `players` WHERE nationality = 'England' AND age >= 20 AND wage >= 100000 
 SELECT name , age , nationality FROM `players` WHERE nationality = 'Argentine' OR nationality = 'Brazil' AND age>= 25
 -- Opdracht 5
-
+SELECT min(value)AS hoogste_loon_speler_fc_utrecht FROM `players` WHERE club = 'FC Utrecht'
+SELECT ROUND (AVG(value)) AS gemiddelde_loon_speler_fc_utrecht FROM `players` WHERE club = 'FC Utrecht'
+SELECT ROUND (SUM(value)) AS som_loon_speler_fc_Groningen FROM `players` WHERE club = 'FC Groningen'
+SELECT COUNT(name) AS Manchester_City__Manchester_United_samen FROM `players` WHERE club = 'Manchester City' OR club = 'Manchester United'
+SELECT AVG(wage) AS gemiddeld_loon_nederlanderse_spelers FROM `players` WHERE nationality = 'Netherlands'
+SELECT AVG(wage) AS gemiddeld_loon_onder_20_jaar FROM `players` WHERE age < 20
+SELECT AVG(wage) AS gemiddeld_loon_boven_20_jaar FROM `players` WHERE age > 20 
+SELECT SUM(value) AS gemiddeld_waarde_spelers_Chelsea FROM `players` WHERE club = 'Chelsea' 
+SELECT AVG(age) AS gemiddeld_leeftijd_spelers FROM `players` 
+SELECT club , wage , round(value) AS club_inkomen_gemiddelde_waarde_Liverpool FROM `players` WHERE club = 'Liverpool'
 -- Opdracht 6
 
 -- Opdracht 7
