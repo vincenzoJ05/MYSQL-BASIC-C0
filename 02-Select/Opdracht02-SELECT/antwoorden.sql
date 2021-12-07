@@ -53,3 +53,5 @@ DELETE FROM `players` WHERE club = 'FC Barcelona' AND nationality = 'Belgium'
 DELETE FROM `players` WHERE age >= 38
 DELETE FROM `players` WHERE id = 167905 OR 169595
 -- Opdracht 7
+/*ik ben het vergeten op te slaan maar de code ging als volgt*/
+DELETE from `players` WHERE id = id_cijfers
