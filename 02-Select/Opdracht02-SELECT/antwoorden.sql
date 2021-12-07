@@ -47,5 +47,9 @@ SELECT SUM(value) AS gemiddeld_waarde_spelers_Chelsea FROM `players` WHERE club 
 SELECT AVG(age) AS gemiddeld_leeftijd_spelers FROM `players` 
 SELECT club , wage , round(value) AS club_inkomen_gemiddelde_waarde_Liverpool FROM `players` WHERE club = 'Liverpool'
 -- Opdracht 6
-
+DELETE FROM `players` WHERE name = 'David Silva'
+DELETE FROM `players` WHERE club = 'Willem II'
+DELETE FROM `players` WHERE club = 'FC Barcelona' AND nationality = 'Belgium'
+DELETE FROM `players` WHERE age >= 38
+DELETE FROM `players` WHERE id = 167905 OR 169595
 -- Opdracht 7
