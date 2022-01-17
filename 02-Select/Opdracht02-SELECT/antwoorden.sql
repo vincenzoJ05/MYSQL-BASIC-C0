@@ -3,7 +3,7 @@ SELECT * FROM `jaar2016`;
 -- Opdracht 2 
 SELECT * FROM `jaar2015`;
 -- Opdracht 3
-SELECT score FROM `jaar2016`;
+SELECT country, score FROM `jaar2016`;
 -- Opdracht 4
 SELECT region FROM `jaar2015`
 -- Opdracht 5
