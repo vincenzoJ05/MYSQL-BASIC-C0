@@ -13,7 +13,7 @@ SELECT AVG(wage) AS gemiddeld_loon_onder_20_jaar FROM `players` WHERE age < 20
 -- Opdracht 7 
 SELECT AVG(wage) AS gemiddeld_loon_boven_20_jaar FROM `players` WHERE age > 20 
 -- Opdracht 8
-SELECT SUM(value) AS gemiddeld_waarde_spelers_Chelsea FROM `players` WHERE club = 'Chelsea' 
+SELECT SUM(value) AS totaal_waarde_spelers_Chelsea FROM `players` WHERE club = 'Chelsea' 
 -- Opdracht 9
 SELECT AVG(age) AS gemiddeld_leeftijd_spelers FROM `players` 
 -- Opdracht 10
